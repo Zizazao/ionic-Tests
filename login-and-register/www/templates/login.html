@@ -1,0 +1,26 @@
+<ion-view view-title="Login" name="login-view">
+  <ion-content class="padding-top">
+      
+      <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="Username" ng-model="user.email">
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="user.password">
+          </label>
+      </div>
+      
+      <button class="button button-block button-positive" ng-click="signIn(user)">
+        Login
+      </button>
+      
+      <div class="padding">
+        <hr>
+        <h4>You don't have an account yet?</h4>
+        <a class="button button-block button-outline button-balanced" class="button button-block button-outline button-balanced" ui-sref="create">
+          Create an Account
+        </a>
+      
+      </div>
+  </ion-content>
+</ion-view>
